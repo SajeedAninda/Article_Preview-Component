@@ -1,6 +1,7 @@
 import React from 'react';
 import mainImg from "../assets/drawers.jpg"
 import avatar from "../assets/avatar.jpg"
+import shareIcon from "../assets/icon-share.svg"
 
 const Article = () => {
     return (
@@ -18,8 +19,8 @@ const Article = () => {
                         Ever been in a room and felt like something was missing? <br /> Perhaps it felt slightly bare and uninviting. I’ve got some simple tips <br /> to help you make any room feel complete.
                     </p>
 
-                    <div className='mt-7'>
-                        <div className='w-[50%] flex justify-between items-center gap-4'>
+                    <div className='mt-7 flex justify-between items-center'>
+                        <div className='w-[50%] flex items-center gap-4'>
                             <div className="img">
                                 <img className='w-[55px] rounded-full' src={avatar} alt="" />
                             </div>
@@ -35,10 +36,11 @@ const Article = () => {
                             </div>
                         </div>
 
-                        <div className='w-[50%]'>
-
+                        <div className='w-[50%] flex justify-end items-center'>
+                            <div className='p-2 bg-[#e8ebf0] rounded-full'>
+                                <img className='w-[17px]' src={shareIcon} alt="Share Icon" />
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -1,8 +1,10 @@
+import Article from "./Components/Article"
+
 function App() {
 
   return (
     <>
-     Hi
+     <Article></Article>
     </>
   )
 }

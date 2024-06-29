@@ -16,12 +16,12 @@ const Article = () => {
 
 
     return (
-        <div className='w-full h-screen bg-[#ecf2f8] flex justify-center items-center relative'>
-            <div className='h-fit w-[60%] rounded-2xl bg-white flex overflow-hidden'>
-                <div className="imgDiv w-[40%]">
+        <div className='w-full h-fit  md:h-screen py-8 md:py-0 bg-[#ecf2f8] flex justify-center items-center relative'>
+            <div className='h-fit w-[90%] md:w-[60%] rounded-2xl bg-white flex flex-col md:flex-row  overflow-hidden'>
+                <div className="imgDiv w-full md:w-[40%]">
                     <img className='w-full h-full object-cover rounded-l-2xl' src={mainImg} alt="" />
                 </div>
-                <div className="textDiv w-[60%] p-7">
+                <div className="textDiv w-full md:w-[60%] p-7">
                     <h2 className='text-[#48556a] font-semibold text-[18px]'>
                         Shift the overall look and feel by adding these wonderful touches to furniture in your home
                     </h2>

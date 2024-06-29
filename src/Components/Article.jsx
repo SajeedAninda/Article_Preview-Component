@@ -2,10 +2,13 @@ import React from 'react';
 import mainImg from "../assets/drawers.jpg"
 import avatar from "../assets/avatar.jpg"
 import shareIcon from "../assets/icon-share.svg"
+import fbIcon from "../assets/icon-facebook.svg";
+import pinIcon from "../assets/icon-pinterest.svg";
+import twitterIcon from "../assets/icon-twitter.svg";
 
 const Article = () => {
     return (
-        <div className='w-full h-screen bg-[#ecf2f8] flex justify-center items-center'>
+        <div className='w-full h-screen bg-[#ecf2f8] flex justify-center items-center relative'>
             <div className='h-fit w-[60%] rounded-2xl bg-white flex overflow-hidden'>
                 <div className="imgDiv w-[40%]">
                     <img className='w-full h-full object-cover rounded-l-2xl' src={mainImg} alt="" />
@@ -36,10 +39,20 @@ const Article = () => {
                             </div>
                         </div>
 
-                        <div className='w-[50%] flex justify-end items-center'>
+                        <div className='w-[50%] flex justify-end items-center cursor-pointer'>
                             <div className='p-2 bg-[#e8ebf0] rounded-full'>
                                 <img className='w-[17px]' src={shareIcon} alt="Share Icon" />
                             </div>
+                        </div>
+
+                        <div className='absolute bottom-72 right-52 w-56 px-8 py-4 z-10 bg-[#48556a] text-white text-center rounded-lg shadow-lg flex justify-between items-center'>
+                            <p className='text-[13px] text-[#a9bddf] font-bold tracking-widest'>SHARE</p>
+                            <div className='flex space-x-2'>
+                                <img className='w-[18px] cursor-pointer' src={fbIcon} alt="Facebook Icon" />
+                                <img className='w-[18px] cursor-pointer' src={twitterIcon} alt="Twitter Icon" />
+                                <img className='w-[18px] cursor-pointer' src={pinIcon} alt="Pinterest Icon" />
+                            </div>
+                            <div className='absolute bottom-[-6px] left-1/2 transform -translate-x-1/2 w-3 h-3 bg-[#48556a] rotate-45'></div>
                         </div>
                     </div>
                 </div>
